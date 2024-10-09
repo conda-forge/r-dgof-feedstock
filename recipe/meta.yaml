@@ -1,4 +1,4 @@
-{% set version = "1.4" %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dgof_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dgof/dgof_{{ version }}.tar.gz
-  sha256: d56165658bb97dce2be7a309baada24fce3facef67853b17b663ab23fc7a6f5d
+  sha256: fa2376149291f278bf6d702df24c0e7a9fe88c9be1562da8ea4660ac23986014
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
